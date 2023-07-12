@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon"
+        href="https://png.pngtree.com/png-clipart/20211116/original/pngtree-letter-p-logo-png-image_6941120.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar {
+            background-color: black;
+            color: white;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 100vw;
+            padding: 10px;
+            height: auto;
+            width: auto;
+        }
+
+        .sidebar [type=text] {
+            float: right;
+            padding: 5px;
+            border: 2px solid white;
+            font-size: 20px;
+        }
+
+        .sidebar nav {
+            padding: 20px;
+            margin: 0px;
+        }
+
+        .slidebar nav ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sidebar nav li {
+            list-style: none;
+            font-size: 25px;
+            padding: 5px;
+            display: inline-flex;
+            padding-inline: 35px;
+        }
+
+        .sidebar nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            transform: scale(1.4);
+        }
+
+        a.active {
+            background-color: yellowgreen;
+        }
+
+        .contact-lsleft {
+            background-image: url(https://dhallywoodworld.files.wordpress.com/2014/12/background-light-web-opera-blue-simple.jpg);
+            width: 100vw;
+            height: 100vh;
+            opacity: 1;
+        }
+
+        .contact-grid {
+            padding: 1em 0 5em;
+            width: 50%;
+            margin: 0px;
+        }
+
+        .contact-grid h4,
+        .address-grid h4 {
+            font-size: 30px;
+            color: black;
+            margin-top: 10%;
+            margin-bottom: 60px;
+            margin-left: 30%;
+            letter-spacing: 1px;
+            font-size: 60px;
+        }
+
+
+        .contact-lsleft input[type="text"],
+        .contact_mob_no,
+        .contact-lsleft input[type="email"],
+        .contact-lsleft textarea {
+            width: 100%;
+            color: black;
+            background: transparent;
+            outline: none;
+            letter-spacing: 1px;
+            font-size: 15px;
+            padding: 12px;
+            margin-bottom: 50px;
+            margin-left: 50%;
+            border: solid 2px black;
+            box-shadow: 0 0 7px 0px rgb(252 252 252 / 54%);
+        }
+
+        input,
+        button,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        input {
+            line-height: normal;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            font: inherit;
+            color: inherit;
+        }
+
+        .contact-lsleft input[type="submit"] {
+            outline: none;
+            color: white;
+            padding: 10px 30px;
+            margin-left: 50%;
+            font-size: 18px;
+            letter-spacing: 1px;
+            background: black;
+            border: solid 1px red;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+        }
+
+        .contact-lsleft input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="hire.html">About me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">My Blog</a></li>
+                <li><a class="active" href="contact.html">Contact me</a></li>
+                <input type="text" placeholder="Search..">
+            </ul>
+        </nav>
+    </div>
+    <div class="contact-lsleft">
+        <div class="container">
+            <div class="contact-grid agileits">
+                <h4>Get In Touch</h4>
+                <form action="git-thanks.php" method="post">
+                    <div class="">
+                        <input type="text" name="cName" placeholder="your Name" required="required" />
+                    </div>
+                    <div class="">
+                        <input type="email" name="cEmail" placeholder="Your Email" required="required" />
+                    </div>
+                    <div class="">
+                        <input type="number" class="contact_mob_no" name="cMobile" placeholder="Your Mobile Number"
+                            required="required" />
+                    </div>
+                    <div class="">
+                        <textarea name="cMessage" placeholder="Type Your Message Here..."
+                            required="required"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
